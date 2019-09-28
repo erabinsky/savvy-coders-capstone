@@ -1,11 +1,13 @@
 :root {
-  --primary: #FF6700;
-  --primary-dark: #D15500;
-  --secondary: #27637F;
-  --secondary-alt: #6D929A;
-  --backsplash: #EBEBEB;
+  --primary: #ff6700;
+  --primary-dark: #d15500;
+  --secondary: #27637f;
+  --secondary-alt: #6d929a;
+  --backsplash: #ebebeb;
 }
 
+
+/* fix margins so both sides are even and container is centered */
 .container {
   display: flex;
   flex-direction: column;
@@ -24,11 +26,44 @@
   align-items: flex-end;
 }
 
+
+/*fix alignment so categories always appear before input*/
 .input-line {
   margin: 1vh;
   padding: 1vh;
-
 }
+
+.links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links li, a{
+  padding: 1vh;
+    background-color: var(--backsplash);
+    margin: 1vh;
+    border-radius: 10px;
+}
+
+.links li a{
+  text-decoration: blink;
+  color: var(--primary);
+    border-color: var(--primary);
+}
+
+.fas{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+
+
 
 body {
   display: flex;
@@ -41,15 +76,37 @@ body {
 }
 
 header {
-
 }
+
+
+/* Create Profile */
+
+
+
+/* Profile Picture */
+/* span .profile-picture{
+  background-color: var(--backsplash);
+  height: 10vh;
+  width: 10vw;
+  border-radius: 50%; */
+
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: flex-end;
+  background-color: var(--backsplash);
+  border-radius: 10px;
+  padding: 4vw;
+  margin-top: 33%;
 }
+
+span {
+  padding: 5px;
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
 
 input {
   align-items: center;
@@ -60,8 +117,18 @@ input {
   color: var(--primary);
 }
 
+#save-cancel {
+  align-self: center;
+}
+
+#save-cancel input {
+  margin: 10px;
+  padding: 5px;
+}
 
 
-body {
-  background-color:
+
+a {
+  background: none;
+  color: var(--primary);
 }
