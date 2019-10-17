@@ -31,5 +31,8 @@
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-prettier": "^1.1.1"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
   }
 }
