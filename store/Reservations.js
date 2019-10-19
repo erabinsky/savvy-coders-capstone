@@ -1,4 +1,4 @@
-export default{
+export default {
   heading:"My Calendar",
   main: `
     <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwip_Mnh8ajlAhXLs54KHSjGD0kQjRx6BAgBEAQ&url=https%3A%2F%2Ftemplates.office.com%2Fen-us%2Fclassic-wall-calendar-mon-sun-two-ring-design-tm16401331&psig=AOvVaw0PZEBbi3mCWTxjIWhsa4y7&ust=1571593930683524"/>
