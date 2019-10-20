@@ -1,6 +1,6 @@
-export default (st) => {
+export default (st) =>
   `<main>
   ${st.main}
   </main>`;
 
-}
+

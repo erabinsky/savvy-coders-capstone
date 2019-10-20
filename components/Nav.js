@@ -1,4 +1,4 @@
-export default () => {
+export default () =>
   `<nav>
     <div class="fas fa-bars"
     <ul class= "navLinks">
@@ -7,5 +7,4 @@ export default () => {
       <li><a href="../store/Contact">Contact Us</a></li>
       <li><a href="../store/Help">Help</a></li>
 
-  </nav>`
-}
+  </nav>`;
