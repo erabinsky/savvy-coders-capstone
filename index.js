@@ -27,4 +27,4 @@ render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toL
 .on("/", () => render())
 .resolve();
 
-  render(state);
+  render();
