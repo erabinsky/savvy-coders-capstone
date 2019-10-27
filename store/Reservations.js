@@ -8,7 +8,7 @@ export default {
       <li>  October 21, 2019 | Grilled Chicken Breast </li>
       <li> Spots available: 15 </li>
     </ul>
-    <a href="#">Reserve Now!</a>
+    <a href="#" id="reserve-now">Reserve Now!</a>
     </div>
 
   <ul class="resSettings">
