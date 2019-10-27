@@ -1,5 +1,6 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
+import { navSlide } from "./lib"
 
 import Navigo from "navigo";
 
@@ -8,16 +9,6 @@ const router = new Navigo(location.origin)
 
 // TODO: Add querySelectors and addEventListener to make hamburger icon functional
 
-const navSlide = () => {
-  //query selectors
-  const hamburger = document.querySelector('.fa-bars');
-  const nav = document.querySelector('.nav-links');
-
-  //event listener/toggle
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('nav-links-active');
-  })
-}
 
 
 //renders imported content as state within specified components

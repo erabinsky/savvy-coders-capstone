@@ -135,14 +135,14 @@ input {
   color: var(--primary);
 }
 
-#save-cancel {
+/* #save-cancel {
   align-self: center;
 }
 
 #save-cancel input {
   margin: 10px;
   padding: 5px;
-}
+} */
 
 
 
