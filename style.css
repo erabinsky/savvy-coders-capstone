@@ -71,12 +71,16 @@ form {
   color: var(--primary)
 }
 .nav-links {
+  transform: translateX(-25%);
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.nav-links-active {
+  transform: translateX(0%)
+}
 
 
 
@@ -185,4 +189,9 @@ address ul li ul {
 
 .resSettings {
   list-style-type: none;
+  color: var(--primary);
+}
+
+.resSettings li {
+  cursor: pointer;
 }

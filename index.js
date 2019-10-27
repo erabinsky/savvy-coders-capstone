@@ -28,7 +28,6 @@ render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toL
 .resolve();
 
 
-
 // TODO: Add querySelectors and addEventListener to make hamburger icon functional
 
 const navSlide = () => {
@@ -38,14 +37,14 @@ const navSlide = () => {
 
   //event listener/toggle
   hamburger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active')
+    nav.classList.toggle('nav-links-active');
   })
-  render(state.Nav)
 }
 navSlide();
 
-  render();
 
+
+  render(st);
 
 
 

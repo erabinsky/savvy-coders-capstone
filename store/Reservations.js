@@ -12,11 +12,11 @@ export default {
     </div>
 
   <ul class="resSettings">
-    <li><a href="#"> Preferences </a></li>
-    <li><a href="#">Restrictions</a></li>
-    <li><a href="#"> Schedule </a></li>
-    <li><a href="#"> Menu Search </a></li>
-    <li><a href="#"> Help </a></li>
+    <li> Preferences </li>
+    <li>Restrictions </li>
+    <li> Schedule </li>
+    <li> Menu Search </li>
+    <li> Help </li>
   </ul>
 
   `
