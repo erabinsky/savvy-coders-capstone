@@ -8,6 +8,6 @@ export default {
           <li> Spots Available: 20</li>
         </ul>
         <a href="#">Reserve Now!</a>
-        <a href="#">Calendar</a>
+        <a data-navigo href="Reservations">Calendar</a>
         <a href="#" id="help">Help</a>`
 }
