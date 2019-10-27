@@ -70,13 +70,17 @@ form {
 .fa-bars{
   color: var(--primary)
 }
-.navLinks {
+.nav-links {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
+
+.nav-active {
+  transform: translateX(0%);
+}
+
 
 .links li, a{
   padding: 1vh;

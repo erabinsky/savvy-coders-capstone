@@ -27,4 +27,25 @@ render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toL
 .on("/", () => render())
 .resolve();
 
+
+
+// TODO: Add querySelectors and addEventListener to make hamburger icon functional
+
+const navSlide = () => {
+  //query selectors
+  const hamburger = document.querySelector('.fa-bars');
+  const nav = document.querySelector('.nav-links');
+
+  //event listener/toggle
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active')
+  })
+  render(state.Nav)
+}
+navSlide();
+
   render();
+
+
+
+

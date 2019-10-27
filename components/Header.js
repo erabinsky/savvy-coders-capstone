@@ -1,5 +1,5 @@
-export default () =>
+export default (st) =>
   `<header>
-  <h1>This is my Header</h1>
+  <h1>${st.heading}</h1>
   </header>`;
 

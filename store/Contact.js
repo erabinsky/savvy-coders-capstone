@@ -1,5 +1,5 @@
 export default {
-  heading: "Contact",
+  heading: "Contact Us",
   main: `
   <address>
   <ul>
