@@ -13,9 +13,22 @@ export default {
 
   <ul class="res-settings">
     <li>Preferences<i class="fas fa-chevron-right arrow down"> </i>
-      <p class="p-is-hidden">Some text</p>
+      <ul class="ul-is-hidden">
+        <li>Poultry</li>
+        <li>Beef</li>
+        <li>Fish</li>
+        <li>Vegetarian</li>
+      </ul>
       </li>
-    <li>Restrictions<i class="fas fa-chevron-right arrow down"> </i> </li>
+
+    <li>Restrictions<i class="fas fa-chevron-right arrow down"> </i>
+      <ul class="ul-is-hidden">
+        <li>Poultry</li>
+        <li>Beef</li>
+        <li>Fish</li>
+        <li>Vegetarian</li>
+      </ul>
+      </li>
     <li> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
     <li> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
     <li> Help </li>

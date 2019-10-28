@@ -155,6 +155,18 @@ input {
 .res-settings li{
   margin-bottom: .25em;
 }
+
+.res-settings li ul {
+  list-style: none;
+  /* position: absolute; */
+  background-color: var(--backsplash);
+  /* border: solid thin var(--primary) */
+}
+
+.res-settings li ul li {
+  padding: 1em;
+  /* border: solid thin var(--primary) */
+}
 .res-settings .fa-chevron-right{
   margin-left: .5em;
 }
@@ -163,7 +175,7 @@ input {
   transform: rotate(90deg);
 }
 
-.p-is-hidden {
+.ul-is-hidden {
   display: none;
 }
 
