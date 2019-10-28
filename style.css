@@ -179,6 +179,10 @@ input {
   display: none;
 }
 
+.selected {
+  background-color: var(--secondary-alt);
+}
+
 a {
   background: none;
   color: var(--primary);
