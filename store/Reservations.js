@@ -11,11 +11,13 @@ export default {
     <a href="#" id="reserve-now">Reserve Now!</a>
     </div>
 
-  <ul class="resSettings">
-    <li> Preferences </li>
-    <li>Restrictions </li>
-    <li> Schedule </li>
-    <li> Menu Search </li>
+  <ul class="res-settings">
+    <li>Preferences<i class="fas fa-chevron-right arrow down"> </i>
+      <p class="p-is-hidden">Some text</p>
+      </li>
+    <li>Restrictions<i class="fas fa-chevron-right arrow down"> </i> </li>
+    <li> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
+    <li> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
     <li> Help </li>
   </ul>
 

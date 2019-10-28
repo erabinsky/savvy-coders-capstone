@@ -9,24 +9,17 @@
 
 /* fix margins so both sides are even and container is centered */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  color: var(--primary);
-  background: var(--backsplash);
-  padding: 5em;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+
 }
 
 
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
   background: var(--backsplash);
 }
 
@@ -144,7 +137,20 @@ input {
   padding: 5px;
 } */
 
+.res-settings li{
+  margin-bottom: .25em;
+}
+.res-settings .fa-chevron-right{
+  margin-left: .5em;
+}
 
+.res-settings .fa-chevron-right .down{
+  transform: rotate(90deg);
+}
+
+.p-is-hidden {
+  display: none;
+}
 
 a {
   background: none;
@@ -179,11 +185,11 @@ address ul li ul {
   padding: 3px;
 }
 
-.resSettings {
+.res-settings {
   list-style-type: none;
   color: var(--primary);
 }
 
-.resSettings li {
+.res-settings li {
   cursor: pointer;
 }
