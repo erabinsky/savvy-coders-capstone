@@ -1,6 +1,6 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
-import { navSlide, showSettings, selectSetting } from "./lib"
+import { navSlide, showSettings, selectResSetting, calendar } from "./lib"
 
 import Navigo from "navigo";
 
@@ -23,7 +23,8 @@ function render(st = state.Login){
 router.updatePageLinks();
 navSlide();
 showSettings();
-selectSetting();
+selectResSetting();
+calendar();
 
 };
 

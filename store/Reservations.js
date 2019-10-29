@@ -2,7 +2,24 @@ export default {
   heading:"My Calendar",
   main: `
     <div class="resContainer">
+    <div class="calendar">
 
+    <h3 class="card-header" id="month-and-year"> Calendar </h3>
+    <table class="table table-bordered table-responsive-sm" id="calendar">
+      <thead>
+        <tr>
+          <td> Mon </td>
+          <td> Tue </td>
+          <td> Wed </td>
+          <td> Thu </td>
+          <td> Fri </td>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+      </table>
+    </div>
+
+    <div class="calendar-dash">
     <ul>
       <li> Today's Date: October 19, 2019 </li>
       <li>  October 21, 2019 | Grilled Chicken Breast </li>
@@ -29,10 +46,11 @@ export default {
         <li>Vegetarian</li>
       </ul>
       </li>
+
     <li> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
     <li> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
     <li> Help </li>
   </ul>
-
+  </div>
   `
 }
