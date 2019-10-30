@@ -30,9 +30,9 @@ calendar();
 
 
 router
-.on(":page", params =>
+.on(":page", params =>  {console.log(params);
 render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toLowerCase()}`])
-)
+})
 .on("/", () => render())
 .resolve();
 

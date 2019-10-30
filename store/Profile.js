@@ -9,5 +9,6 @@ export default {
         </ul>
         <a href="#">Reserve Now!</a>
         <a data-navigo href="Reservations">Calendar</a>
-        <a href="#" id="help">Help</a>`
+        <a data-navigo href="EditProfile">Edit Profile</a>
+        `
 }

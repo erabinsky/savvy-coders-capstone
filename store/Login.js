@@ -11,12 +11,12 @@ main:
   </div>
     <div class="input-line">
     <label for="password">Password</label>
-    <input type="text" name="password" id="password" />
+    <input type="password" name="password" id="password" />
     </div>
   <input type="Submit" value="Submit" />
 </div>
 </form>
 </div>
 <ul class="links">
-<li><a href="./docs/Profile/create_profile.html">New User</a></li`
+<li><a data-navigo href="EditProfile">New User</a></li>`
 }
