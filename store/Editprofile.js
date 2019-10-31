@@ -32,7 +32,7 @@ export default {
         <input type="text" name="password" id="password"/>
     </span>
 <span id="save-cancel">
-    <input type="button" value="Save" id="save"/>
+    <input type="submit" value="Save" id="save"/>
     <input type="reset" value="Cancel" id="cancel"/>
 </span>
     </form>
