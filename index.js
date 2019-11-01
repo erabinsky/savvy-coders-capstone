@@ -26,9 +26,9 @@ showSettings();
 selectResSetting();
 calendar();
 editUser();
-// newUser();
+userLogin();
 
-};
+}
 
 
 router

@@ -3,7 +3,7 @@ heading: "Welcome",
 main:
   `<div class="container">
 
-  <form action="#" id="user-login">
+  <form action="#" alignment="center" id="user-login">
   <div class="input">
 
     <div class="input-line">
@@ -14,7 +14,8 @@ main:
     <label for="password">Password</label>
     <input type="password" name="password" id="login-password" />
     </div>
-  <input type="submit" id="login" value="Login"/>
+
+    <input type="submit" id="login" value="Login"/>
 </div>
 </form>
 
