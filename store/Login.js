@@ -2,20 +2,22 @@ export default {
 heading: "Welcome",
 main:
   `<div class="container">
-<form action="#">
+
+  <form action="#" id="user-login">
   <div class="input">
 
     <div class="input-line">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" />
+    <label for="login-email">Email Address</label>
+    <input type="text" name="login-email" id="login-email" />
   </div>
     <div class="input-line">
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
+    <input type="password" name="password" id="login-password" />
     </div>
-  <input type="Submit" value="Log In" id="login" />
+  <input type="submit" id="login" value="Login"/>
 </div>
 </form>
+
 </div>
 <ul class="links">
 <li><a data-navigo href="EditProfile">New User</a></li>`

@@ -1,7 +1,7 @@
 export default {
   heading: `Edit Profile`,
   main:`
-<form action="#" alignment="center" id="user-registration">
+<form action="#" alignment="center" id="new-user">
     <span id="profile-picture" class="fas fa-user-circle"></span>
     <span>
         <label for="first-name">First Name</label>

@@ -26,7 +26,7 @@ showSettings();
 selectResSetting();
 calendar();
 editUser();
-newUser();
+// newUser();
 
 };
 
