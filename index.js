@@ -1,6 +1,6 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
-import { navSlide, showSettings, selectResSetting, calendar, clientUpload, editUser, newUser, userLogin } from "./lib"
+import { navSlide, showSettings, selectResSetting, calendar, clientUpload, editUser, newUser, userSignup,  } from "./lib"
 
 import Navigo from "navigo";
 
@@ -25,8 +25,8 @@ navSlide();
 showSettings();
 selectResSetting();
 calendar();
-editUser();
-userLogin();
+// editUser();
+userSignup();
 
 }
 
