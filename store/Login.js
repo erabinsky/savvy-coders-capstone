@@ -3,20 +3,22 @@ heading: "Welcome",
 main:
   `<div class="container">
 
-  <form action="#" alignment="center" id="user-login">
-  <div class="input">
+  <form action="data-navigo href='Profile'" id="user-login">
+    <div class="input">
 
-    <div class="input-line">
-    <label for="login-email">Email Address</label>
-    <input type="text" name="login-email" id="login-email" />
-  </div>
-    <div class="input-line">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="login-password" />
+      <div class="input-line">
+       <label for="login-email">Email Address</label>
+       <input type="text" name="login-email" id="login-email">
+      </div>
+
+      <div class="input-line">
+       <label for="password">Password</label>
+       <input type="password" name="password" id="login-password">
+      </div>
+
+       <input type="submit" id="login" value="Login">
+
     </div>
-
-    <input type="submit" id="login" value="Login"/>
-</div>
 </form>
 
 </div>

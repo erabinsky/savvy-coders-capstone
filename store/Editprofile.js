@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 export default {
   heading: `Edit Profile`,
   main:`
@@ -22,11 +23,11 @@ export default {
     </span>
     <span>
         <label for="address">Address</label>
-        <input type="text" name="address" id="address" pattern="[0-9]+[ [a-zA-Z]+[ ][a-zA-Z]+[,][ ][0-9]{5}" placeholder="### Street, ZIP">
+        <input type="text" name="address" id="address" pattern="[0-9]+[ ][a-zA-Z]+[ ][a-zA-Z]+[,][ ][0-9]{5}" placeholder="### Street, ZIP">
     </span>
     <span>
         <label for="email">Email Address</label>
-        <input type="text" name="email" id="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.][a-zA-Z0-9]" placeholder="example@email.com">
+        <input type="text" name="email" id="email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" placeholder="example@email.com">
     </span>
     <span>
         <label for="password">Password</label>
