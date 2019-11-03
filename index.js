@@ -6,6 +6,7 @@ import { navSlide, showSettings, selectResSetting, calendar, userSignup, login }
 
 import Navigo from "navigo";
 import { auth, db, firebase } from "./firebase";
+import { firestore } from "firebase";
 
 const router = new Navigo(location.origin)
 
@@ -38,15 +39,27 @@ function render(st = state.Login) {
       console.log('clicked');
       const email = document.getElementById('login-email').value;
       const password = document.getElementById('login-password').value;
+      firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(() => {
 
-      firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-      });
-      router.navigate('/Profile');
-    })
+            router.navigate('/Profile')
+
+          })
+        .catch(function (error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+          router.navigate('/Login')
+        });
+
+    });
+
   }
 
   if (currentPage === "/EditProfile") {
@@ -68,7 +81,7 @@ function render(st = state.Login) {
 
       auth.createUserWithEmailAndPassword(email, password).then(cred => {
 
-          console.log(email);
+        console.log(email);
         return db.collection('users').doc(cred.user.uid).set({
           firstName: firstName.value,
           lastName: lastName.value,
@@ -80,41 +93,33 @@ function render(st = state.Login) {
 
         })
       })
-      .catch(console.error)
+        .catch(console.error)
     })
   }
 
-  if (currentPage === "/Login"){
+//Profile Page
+if (currentPage === "/Profile"){
 
-      const userLogin = document.querySelector('#user-login');
+  // const firstName = db.collection('users').doc().firstName.value;
+  // const lastName = db.collection('users').doc().lastName.value;
+  // st.heading = `${firstName} ${lastName}`
 
-      userLogin.addEventListener('submit', (e) => {
-        e.preventDefault;
-        console.log('lets log in!');
-        // const email = db.collection('users').doc().get(email);
-        // const password = db.collection('users').doc().get(password);
-        router.navigate('/Profile')
+}
 
-      })
-    }
-
-  }
+}
 
 
-  // //User Listener
-  // auth.onAuthStateChanged(user => {
-  //       st.isAuth = Boolean(user);
-  //     })
+// //User Listener
 
 
 
 router
-        .on(":page", params => {
-          console.log(params);
-          render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toLowerCase()}`])
-        })
-        .on("/", () => render())
-        .resolve();
+  .on(":page", params => {
+    console.log(params);
+    render(state[`${params.page.slice(0, 1).toUpperCase()}${params.page.slice(1).toLowerCase()}`])
+  })
+  .on("/", () => render())
+  .resolve();
 
 
 

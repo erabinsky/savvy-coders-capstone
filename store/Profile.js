@@ -1,6 +1,6 @@
 
 export default {
-  heading: "Client Name",
+  heading: "",
   main: `
         <img src="https://picsum.photos/id/555/200/200"/>
         <ul class="dashboard">
