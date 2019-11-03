@@ -84,13 +84,29 @@ function render(st = state.Login) {
     })
   }
 
+  if (currentPage === "/Login"){
+
+      const userLogin = document.querySelector('#user-login');
+
+      userLogin.addEventListener('submit', (e) => {
+        e.preventDefault;
+        console.log('lets log in!');
+        // const email = db.collection('users').doc().get(email);
+        // const password = db.collection('users').doc().get(password);
+        router.navigate('/Profile')
+
+      })
+    }
+
+  }
+
 
   // //User Listener
   // auth.onAuthStateChanged(user => {
   //       st.isAuth = Boolean(user);
   //     })
 
-}
+
 
 router
         .on(":page", params => {
