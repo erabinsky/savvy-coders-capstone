@@ -4,7 +4,7 @@ export default {
   main: `
         <img src="https://picsum.photos/id/555/200/200"/>
         <ul class="dashboard">
-          <li> Today's Date</li>
+          <li> Today's Date </li>
           <li> Today's Menu</li>
           <li> Spots Available: 20</li>
         </ul>

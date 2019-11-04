@@ -31,6 +31,8 @@ function render(st = state.Login) {
   // userSignup();
   // login();
 
+
+  //Login Function
   console.log(router.lastRouteResolved().url)
   const currentPage = router.lastRouteResolved().url;
   if (currentPage === "/Login") {
@@ -61,6 +63,16 @@ function render(st = state.Login) {
     });
 
   }
+
+  //Logout Function
+
+  const logout = document.getElementById('logout');
+  logout.addEventListener('click', () => {
+    auth.signOut().then(() => {
+      alert('Successfully Logged Out!');
+      router.navigate('/Login');
+    })
+  })
 
   if (currentPage === "/EditProfile") {
     console.log(router.lastRouteResolved().url)
