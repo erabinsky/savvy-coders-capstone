@@ -9,6 +9,7 @@ import { auth, db, firebase } from "./firebase";
 import { firestore } from "firebase";
 import { userInfo } from "os";
 
+
 const router = new Navigo(location.origin)
 
 
@@ -37,14 +38,31 @@ function render(st = state.Login) {
 
   //FIREBASE
 
-  //Auth Status Listener
-auth.onAuthStateChanged(userInfo => {
-  if (userInfo) {
-    console.log('user logged in:', userInfo)
-  } else {
-    console.log('user logged out')
+
+  const users = (data) => {
+
+    data.forEach(doc => {
+      const user = doc.data();
+      console.log(user);
+    })
   }
-})
+
+
+
+  //Firestore Getter
+  // db.collection('users').get().then(snapshot => {
+  //   snapshot.docs.forEach(doc => {}
+  //     )}
+
+  //Auth getter
+
+
+
+  //Auth Status Listener
+  auth.onAuthStateChanged(userInfo => {
+    if (userInfo) {
+      console.log('user logged in:', userInfo.uid);
+    }
 
 
 
@@ -68,7 +86,7 @@ auth.onAuthStateChanged(userInfo => {
 
 
 
-          }))
+        }))
         .catch(function (error) {
           // Handle Errors here.
           var errorCode = error.code;
@@ -131,14 +149,43 @@ auth.onAuthStateChanged(userInfo => {
     })
   }
 
-//Profile Page
-if (currentPage === "/Profile"){
+  //Profile Page
+  if (currentPage === "/Profile") {
+    const profileHeading = document.querySelector('.profile-name')
+    console.log(typeof firebase.auth().currentUser.uid)
+    db.collection('users').get().then(snapshot => {
+      snapshot.docs.forEach(doc => {
+        if (doc.id === auth.currentUser.uid){
+          console.log(doc.data().firstName);
+          profileHeading.innerHTML = `${doc.data().firstName} ${doc.data().lastName}`
+        }
+      })
+    })
 
-  // const firstName = db.collection('users').doc().firstName.value;
-  // const lastName = db.collection('users').doc().lastName.value;
-  // st.heading = `${firstName} ${lastName}`
 
-}
+    // if (db.collection('users').doc.id === firebase.auth().currentUser.uid) {
+    //   console.log('matching id')
+    // } else {
+    //   console.log('not matching')
+    // }
+
+
+    //   db.collection('users').get().then(snapshot => {
+    //     snapshot.docs.forEach(doc => {
+    //       console.log(doc.id)
+    //       profileHeading.innerHTML = doc.data().firstName
+    //     });
+    //   });
+
+    // console.log(auth.onAuthStateChanged(userInfo => {
+    //   console.log(userInfo.uid)
+    // }))
+
+  }
+  else {
+    console.log('user logged out')
+  }
+})
 
 }
 

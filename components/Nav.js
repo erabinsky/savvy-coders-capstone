@@ -1,6 +1,6 @@
 export default () => `
 <nav>
-    <span class="fas fa-bars">
+    <span class="fas fa-bars" id="hamburger">
     </span>
     <ul class= "nav-links">
       <li><a data-navigo href="Profile">My Profile</a></li>
