@@ -27,7 +27,7 @@ export default {
     </span>
     <span>
         <label for="email">Email Address</label>
-        <input type="text" name="email" id="email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" placeholder="example@email.com">
+        <input type="text" name="email" id="email" pattern="[a-zA-Z0-9]([.]?[a-zA-Z0-9]+)?+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+" placeholder="example@email.com">
     </span>
     <span>
         <label for="password">Password</label>

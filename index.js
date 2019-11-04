@@ -7,6 +7,7 @@ import { navSlide, showSettings, selectResSetting, calendar, userSignup, login }
 import Navigo from "navigo";
 import { auth, db, firebase } from "./firebase";
 import { firestore } from "firebase";
+import { userInfo } from "os";
 
 const router = new Navigo(location.origin)
 
@@ -32,6 +33,25 @@ function render(st = state.Login) {
   // login();
 
 
+
+
+  //FIREBASE
+
+  //Auth Status Listener
+auth.onAuthStateChanged(userInfo => {
+  if (userInfo) {
+    console.log('user logged in:', userInfo)
+  } else {
+    console.log('user logged out')
+  }
+})
+
+
+
+
+
+
+
   //Login Function
   console.log(router.lastRouteResolved().url)
   const currentPage = router.lastRouteResolved().url;
@@ -42,11 +62,13 @@ function render(st = state.Login) {
       const email = document.getElementById('login-email').value;
       const password = document.getElementById('login-password').value;
       firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(() => {
+        .then((cred => {
+          alert(`Hi, ${email}!`);
+          router.navigate('/Profile')
 
-            router.navigate('/Profile')
 
-          })
+
+          }))
         .catch(function (error) {
           // Handle Errors here.
           var errorCode = error.code;
