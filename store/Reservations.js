@@ -21,7 +21,7 @@ export default {
 
     <div class="calendar-dash">
     <ul>
-      <li> Today's Date: October 19, 2019 </li>
+      <li id="calendar-today"></li>
       <li>  October 21, 2019 | Grilled Chicken Breast </li>
       <li> Spots available: 15 </li>
     </ul>

@@ -2,7 +2,7 @@ export default () => `
 <nav>
     <span class="fas fa-bars" id="hamburger">
     </span>
-    <ul class= "nav-links">
+    <ul class= "nav-links" id="nav-links">
       <li><a data-navigo href="Profile">My Profile</a></li>
       <li><a data-navigo href="Reservations">My Reservations</a></li>
       <li><a data-navigo href="Contact">Contact Us</a></li>

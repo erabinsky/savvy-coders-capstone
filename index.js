@@ -66,6 +66,12 @@ function render(st = state.Login) {
     console.log(router.lastRouteResolved().url)
     const currentPage = router.lastRouteResolved().url;
     if (currentPage === "/Login") {
+
+
+      //Hide Hamburger
+      document.getElementById('hamburger').style.visibility = "hidden";
+
+
       document.querySelector('#user-login').addEventListener('submit', (e) => {
         e.preventDefault();
         console.log('clicked');
@@ -85,9 +91,9 @@ function render(st = state.Login) {
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode === 'auth/wrong-password') {
-              alert('Wrong password.');
+              alert('Wrong password.'), document.getElementById("user-login").reset();
             } else {
-              alert(errorMessage);
+              alert(errorMessage), document.getElementById('user-login').reset();
             }
             console.log(error);
             router.navigate('/Login')
@@ -149,7 +155,6 @@ function render(st = state.Login) {
       const profileHeading = document.querySelector('.profile-name')
       const todayMenu = document.querySelector('#dashboard-menu')
       const todayDate = document.querySelector('#dashboard-date')
-
       //CROSS REFERENCES DB AND AUTH!
       db.collection('users').get().then(snapshot => {
         snapshot.docs.forEach(doc => {
@@ -167,12 +172,12 @@ function render(st = state.Login) {
         }
       })
     })
-
     }
     else {
       console.log('user logged out')
     }
   })
+
 
 }
 
