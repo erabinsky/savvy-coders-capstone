@@ -28,22 +28,22 @@ export default {
     <a href="#" id="reserve-now">Reserve Now!</a>
     </div>
 
-  <ul class="res-settings">
-    <li>Preferences<i class="fas fa-chevron-right arrow down"> </i>
-      <ul class="ul-is-hidden">
-        <li>Poultry</li>
-        <li>Beef</li>
-        <li>Fish</li>
-        <li>Vegetarian</li>
+  <ul>
+    <li class="res-settings">Preferences<i class="fas fa-chevron-right arrow down"> </i>
+      <ul class="settings-dropdown" id="preferences">
+        <li class="meal">Poultry</li>
+        <li class="meal">Beef</li>
+        <li class="meal">Fish</li>
+        <li class="meal">Vegetarian</li>
       </ul>
       </li>
 
-    <li>Restrictions<i class="fas fa-chevron-right arrow down"> </i>
-      <ul class="ul-is-hidden">
-        <li>Poultry</li>
-        <li>Beef</li>
-        <li>Fish</li>
-        <li>Vegetarian</li>
+    <li class="res-settings">Restrictions<i class="fas fa-chevron-right arrow down"> </i>
+      <ul class="settings-dropdown" id="restrictions">
+        <li class="meal">Poultry</li>
+        <li class="meal">Beef</li>
+        <li class="meal">Fish</li>
+        <li class="meal">Vegetarian</li>
       </ul>
       </li>
 

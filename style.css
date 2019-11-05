@@ -183,12 +183,12 @@ input {
   margin-left: .5em;
 }
 
-.res-settings .fa-chevron-right .down{
+.down {
   transform: rotate(90deg);
 }
 
-.ul-is-hidden {
-  display: none;
+.hidden {
+  visibility: hidden;
 }
 
 .selected {

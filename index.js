@@ -173,6 +173,28 @@ function render(st = state.Login) {
       })
     })
     }
+
+
+    //Calendar/Reservations Page
+    if (currentPage === '/Reservations'){
+      document.getElementById('calendar-today').innerHTML = date;
+
+        //query selectors
+        const listItems = document.querySelectorAll('.res-settings');
+        const uiArrow = document.querySelector('.res-settings .fa-chevron-right');
+        const dropList = document.querySelector('.res-settings ul');
+        const meal = document.querySelector('.meal');
+
+        //event listener/toggle
+
+        listItems.forEach(listItem => {
+          listItem.addEventListener('click', () => {
+            listItem.querySelector('.settings-dropdown').toggleAttribute('hidden')
+          })
+        })
+
+
+    }
     else {
       console.log('user logged out')
     }
@@ -182,7 +204,7 @@ function render(st = state.Login) {
 }
 
 
-// //User Listener
+
 
 
 
