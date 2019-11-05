@@ -144,15 +144,17 @@ function render(st = state.Login) {
           password: password
 
         })
+
       })
         .catch(console.error)
+        router.navigate('/Profile')
     })
   }
 
   //Profile Page
   if (currentPage === "/Profile") {
     const profileHeading = document.querySelector('.profile-name')
-    console.log(typeof firebase.auth().currentUser.uid)
+    //CROSS REFERENCES DB AND AUTH!
     db.collection('users').get().then(snapshot => {
       snapshot.docs.forEach(doc => {
         if (doc.id === auth.currentUser.uid){
