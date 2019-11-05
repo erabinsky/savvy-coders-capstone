@@ -147,7 +147,9 @@ function render(st = state.Login) {
     //Profile Page
     if (currentPage === "/Profile") {
       const profileHeading = document.querySelector('.profile-name')
-      const todayMenu = document.querySelector('#today-menu')
+      const todayMenu = document.querySelector('#dashboard-menu')
+      const todayDate = document.querySelector('#dashboard-date')
+
       //CROSS REFERENCES DB AND AUTH!
       db.collection('users').get().then(snapshot => {
         snapshot.docs.forEach(doc => {
@@ -160,6 +162,7 @@ function render(st = state.Login) {
     db.collection('menus').get().then(snapshot=> {
       snapshot.docs.forEach(doc => {
         if (doc.data().date === date){
+          todayDate.innerHTML = `Today's Date: ${date}`
           todayMenu.innerHTML = `Today's Menu: ${doc.data().meal}`
         }
       })
