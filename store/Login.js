@@ -13,7 +13,7 @@ main:
 
       <div class="input-line">
        <label for="password">Password</label>
-       <input type="password" name="password" id="login-password">
+       <input class="contact-input" type="password" name="password" id="login-password">
       </div>
 
        <input type="submit" id="login" value="Login">

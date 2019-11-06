@@ -117,10 +117,7 @@ form {
   list-style-type: none;
 }
 
-#new-user{
- display: inherit;
- text-align: center;
-}
+
 
 
 
@@ -263,3 +260,45 @@ address ul li ul {
   display: block;
   text-align: center;
 }
+
+/* #contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-items: flex-start;
+}
+
+.contact-input{
+  display: inherit;
+  align-self: flex-end;
+} */
+
+#contact-form{
+  margin-top: 0;
+}
+#contact-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-row{
+  display: flex;
+  align-self: flex-end;
+  padding: 2vh;
+}
+
+.contact-label{
+  margin-right: 10vw;
+}
+
+
+
+
