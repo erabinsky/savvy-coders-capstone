@@ -113,8 +113,13 @@ form {
 
 /* Footer Nav*/
 
-.links {
+.links{
   list-style-type: none;
+}
+
+#new-user{
+ display: inherit;
+ text-align: center;
 }
 
 

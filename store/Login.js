@@ -23,5 +23,5 @@ main:
 
 </div>
 <ul class="links">
-<li><a data-navigo href="EditProfile">New User</a></li>`
+<li id="new-user"><a data-navigo href="EditProfile">New User</a></li>`
 }
