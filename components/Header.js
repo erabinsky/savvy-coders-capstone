@@ -1,5 +1,5 @@
 export default () =>
   `<header>
-  <h1>reServe</h1>
+  <h1 id="reServe">reServe</h1>
   </header>`;
 

@@ -214,6 +214,13 @@ address ul li ul {
 /* Reservations */
 
 
+.reserve-now {
+  cursor: pointer;
+}
+
+#reserve-now-profile {
+  display: block;
+}
 
 #reserve-now{
   text-decoration: none;
@@ -236,4 +243,18 @@ address ul li ul {
 
 .res-settings li {
   cursor: pointer;
+}
+
+#reServe{
+  margin: 0;
+  padding: 2vh;
+  display: block;
+  text-align: center;
+  color: var(--backsplash);
+  background-color: var(--primary);
+}
+
+.footer{
+  display: block;
+  text-align: center;
 }

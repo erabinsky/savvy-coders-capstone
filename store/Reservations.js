@@ -29,7 +29,7 @@ export default {
     </div>
 
   <ul>
-    <li class="res-settings">Preferences<i class="fas fa-chevron-right arrow down"> </i>
+    <li class="res-settings">Preferences<i class="fas fa-chevron-right arrow"> </i>
       <ul class="settings-dropdown" id="preferences">
         <li class="meal">Poultry</li>
         <li class="meal">Beef</li>
@@ -38,7 +38,7 @@ export default {
       </ul>
       </li>
 
-    <li class="res-settings">Restrictions<i class="fas fa-chevron-right arrow down"> </i>
+    <li class="res-settings">Restrictions<i class="fas fa-chevron-right arrow"> </i>
       <ul class="settings-dropdown" id="restrictions">
         <li class="meal">Poultry</li>
         <li class="meal">Beef</li>
@@ -47,9 +47,9 @@ export default {
       </ul>
       </li>
 
-    <li> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
-    <li> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
-    <li> Help </li>
+    <li class="res-settings"> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
+    <li class="res-settings"> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
+
   </ul>
   </div>
   `

@@ -26,6 +26,7 @@ function render(st = state.Login) {
   `);
   router.updatePageLinks();
   navSlide();
+  // addReservation();
   // showSettings();
   // selectResSetting();
   // calendar();
@@ -155,6 +156,7 @@ function render(st = state.Login) {
       const profileHeading = document.querySelector('.profile-name')
       const todayMenu = document.querySelector('#dashboard-menu')
       const todayDate = document.querySelector('#dashboard-date')
+      const availability = document.querySelector('#availability')
       //CROSS REFERENCES DB AND AUTH!
       db.collection('users').get().then(snapshot => {
         snapshot.docs.forEach(doc => {
@@ -169,6 +171,7 @@ function render(st = state.Login) {
         if (doc.data().date === date){
           todayDate.innerHTML = `Today's Date: ${date}`
           todayMenu.innerHTML = `Today's Menu: ${doc.data().meal}`
+          availability.innerHTML = `Spots Available: ${doc.data().availability}`
         }
       })
     })
@@ -181,17 +184,18 @@ function render(st = state.Login) {
 
         //query selectors
         const listItems = document.querySelectorAll('.res-settings');
-        const uiArrow = document.querySelector('.res-settings .fa-chevron-right');
-        const dropList = document.querySelector('.res-settings ul');
+        const uiArrows = document.querySelectorAll('.fa-chevron-right');
         const meal = document.querySelector('.meal');
 
         //event listener/toggle
 
         listItems.forEach(listItem => {
           listItem.addEventListener('click', () => {
-            listItem.querySelector('.settings-dropdown').toggleAttribute('hidden')
+            listItem.querySelector('.settings-dropdown').toggleAttribute('hidden');
           })
         })
+
+
 
 
     }

@@ -7,9 +7,9 @@ export default {
         <ul class="dashboard">
           <li class="today" id="dashboard-date"></li>
           <li class="today" id="dashboard-menu"></li>
-          <li class="today"> Spots Available: 20</li>
+          <li class="today" id="availability"></li>
         </ul>
-        <a href="#">Reserve Now!</a>
+        <span class="reserve-now" id="reserve-now-profile"> Reserve Now!</span>
         <a data-navigo href="Reservations">Calendar</a>
         <a data-navigo href="EditProfile">Edit Profile</a>
         `
