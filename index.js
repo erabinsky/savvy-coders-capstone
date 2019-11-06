@@ -191,7 +191,7 @@ function render(st = state.Login) {
 
         listItems.forEach(listItem => {
           listItem.addEventListener('click', () => {
-            listItem.querySelector('.settings-dropdown').toggleAttribute('hidden');
+            listItem.querySelector('.settings-dropdown').classList.toggle('none');
           })
         })
 

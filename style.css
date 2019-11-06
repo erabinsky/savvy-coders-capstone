@@ -46,6 +46,8 @@ body {
 }
 
 
+
+
 /*fix alignment so categories always appear before input*/
 .input-line {
   margin: 1vh;
@@ -191,6 +193,9 @@ input {
 
 .hidden {
   visibility: hidden;
+}
+.none {
+  display: none;
 }
 
 .selected {

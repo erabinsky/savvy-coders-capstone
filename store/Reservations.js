@@ -1,5 +1,5 @@
 export default {
-  heading:"My Calendar",
+  heading:"My Reservations",
   main: `
     <div class="resContainer">
     <div class="calendar">
@@ -30,7 +30,7 @@ export default {
 
   <ul>
     <li class="res-settings">Preferences<i class="fas fa-chevron-right arrow"> </i>
-      <ul class="settings-dropdown" id="preferences">
+      <ul class="settings-dropdown none" id="preferences">
         <li class="meal">Poultry</li>
         <li class="meal">Beef</li>
         <li class="meal">Fish</li>
@@ -39,7 +39,7 @@ export default {
       </li>
 
     <li class="res-settings">Restrictions<i class="fas fa-chevron-right arrow"> </i>
-      <ul class="settings-dropdown" id="restrictions">
+      <ul class="settings-dropdown none" id="restrictions">
         <li class="meal">Poultry</li>
         <li class="meal">Beef</li>
         <li class="meal">Fish</li>
