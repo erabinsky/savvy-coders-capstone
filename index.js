@@ -51,7 +51,7 @@ function render(st = state.Login) {
 
 
 
-
+//Listens for whether or not there is a user logged-in
   //Auth Status Listener
   auth.onAuthStateChanged(userInfo => {
     if (userInfo) {
@@ -130,7 +130,7 @@ function render(st = state.Login) {
         const password = document.getElementById('password').value;
 
 
-
+        //writes user doc in 'users' collection based on auth user credentials
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
 
           console.log(email);
@@ -198,21 +198,9 @@ function render(st = state.Login) {
             console.log(doc.data())
 
           }
-    });
-  })
+        });
+      })
     })
-    // document.querySelector('.reserve-now').addEventListener("click", () => {
-    //   db.collection('menus').get().then(snapshot => {
-    //     snapshot.docs.forEach(doc => {
-    //       if (doc.data().date === date){
-    //         doc.update({
-    //           availability: 81
-    //         })
-    //       }
-    //     })
-    //   })
-    // })
-
     }
 
 
