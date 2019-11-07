@@ -191,7 +191,7 @@ function render(st = state.Login) {
             db.collection('menus').doc(doc.id).update({
               ...doc.data(), //SPREAD OPERATOR
               availability: doc.data().availability -1
-            })
+            }) //TODO add .then() method to set innerHTML of elementID containing availability with new availability value
             console.log(doc.data())
           }
     });
