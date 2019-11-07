@@ -33,7 +33,7 @@ Aside from efficiency, the main benefit of this app is its greater impact on qua
 
 
 # Design Architecture
-reServe is designed to be mobile first in order to put reServe straight into the clients’ hands. Reservations are made using an original single-page UI, Firebase manages daily reservations, menus, and client profiles on the back end, and JavaScript handles UX and facilitates interaction with the backend. Special thank you/shoutout to [Krasimir](https://github.com/krasimir), the creator of [Navigo](https://github.com/krasimir/navigo), whose router I am using to manage state-view.
+reServe is designed to be mobile first in order to put reServe straight into the clients’ hands (note: I am planning to add media queries to create tablet and desktop-friendly versions of the app). Reservations are made using an original single-page UI, Firebase manages daily reservations, menus, and client profiles on the back end, and JavaScript handles UX and facilitates interaction with the backend. Special thank you/shoutout to [Krasimir](https://github.com/krasimir), the creator of [Navigo](https://github.com/krasimir/navigo), whose router I am using to manage state-view.
 Plans to expand reServe include:
   - using JavaScript to populate a reservation and sign-in list, which will then be executed on screen as an expedited two-touch “signature” process (one touch next to the client’s name, another touch to confirm attendance)
   - facilitating home delivery (e.g. Meals on Wheels) by accessing the Google Maps API to route delivery drivers to clients receiving home delivered meals
