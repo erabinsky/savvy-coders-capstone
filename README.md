@@ -1,11 +1,11 @@
 # reServe
 
 
-## Before Savvy Coders
+## Before Coding
 
-I have diverse experience in a number of areas and disciplines, including a bachelor’s degree in linguistics, extensive experience in food service, and teaching. Immediately before beginning to code with Savvy Coders, I was managing 5 nutrition programs for a non-profit that serves as both a senior center and affordable housing for low-income older adults.
+I have diverse experience in a number of areas and disciplines, including a bachelor’s degree in linguistics, extensive experience in food service, and teaching. Immediately before enrolling in the Savvy Coders code bootcamp, I was managing 5 nutrition programs for a non-profit that serves as both a senior center and affordable housing for low-income older adults.
 
-## reServe's Backstory
+## Backstory
 When I began working in social services, among the initiatives that I took upon myself was to digitize and automate a number of handwritten procedures for which I was responsible. Among those procedures was a meal reservation system, which was being done with a 5lb binder containing reservation lists for each day of the month, with accompanying handwritten notes. Aside from the inherent challenges of completely uploading a system from a physical location to a shared drive, there were a number of accessibility concerns, as well.
 First, I needed to develop the reservation system in such a way that it would be intuitive for my coworkers to use.
 
