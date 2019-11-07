@@ -1,7 +1,7 @@
 # reServe
 
 
-## Before Savvy Coders?
+## Before Savvy Coders
 
 I have diverse experience in a number of areas and disciplines, including a bachelor’s degree in linguistics, extensive experience in food service, and teaching. Immediately before beginning to code with Savvy Coders, I was managing 5 nutrition programs for a non-profit that serves as both a senior center and affordable housing for low-income older adults.
 
