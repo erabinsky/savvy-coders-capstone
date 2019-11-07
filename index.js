@@ -10,6 +10,7 @@ import { firestore } from "firebase";
 import { userInfo } from "os";
 
 
+
 const router = new Navigo(location.origin)
 
 
@@ -118,7 +119,6 @@ function render(st = state.Login) {
       console.log(router.lastRouteResolved().url)
       document.querySelector('#new-user').addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log('clicked, too!')
         const firstName = document.getElementById('first-name');
         const lastName = document.getElementById('last-name');
         const DOB = document.getElementById('DOB');
@@ -166,6 +166,8 @@ function render(st = state.Login) {
           }
         })
       })
+
+    // Dynamic Dashboard Data
     db.collection('menus').get().then(snapshot=> {
       snapshot.docs.forEach(doc => {
         if (doc.data().date === date){
@@ -175,6 +177,38 @@ function render(st = state.Login) {
         }
       })
     })
+
+    const menuRef = db.collection('menus')
+    const reserveNow = document.getElementById('reserve-now-profile');
+
+    reserveNow.addEventListener('click', () => {
+      db.collection('menus').get().then(snapshot=> {
+        console.log(snapshot)
+        snapshot.docs.forEach(doc => {
+          if (doc.data().date === date){
+            const newAvailability = availability -1;
+            doc.availability = newAvailability;
+            db.collection('menus').doc(doc.id).update({
+              ...doc.data(), //SPREAD OPERATOR
+              availability: doc.data().availability -1
+            })
+            console.log(doc.data())
+          }
+    });
+  })
+    })
+    // document.querySelector('.reserve-now').addEventListener("click", () => {
+    //   db.collection('menus').get().then(snapshot => {
+    //     snapshot.docs.forEach(doc => {
+    //       if (doc.data().date === date){
+    //         doc.update({
+    //           availability: 81
+    //         })
+    //       }
+    //     })
+    //   })
+    // })
+
     }
 
 
@@ -194,6 +228,7 @@ function render(st = state.Login) {
             listItem.querySelector('.settings-dropdown').classList.toggle('none');
           })
         })
+
 
 
 
