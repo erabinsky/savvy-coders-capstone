@@ -1,11 +1,11 @@
-#reServe
+# reServe
 
 
-##Before Savvy Coders?
+## Before Savvy Coders?
 
 I have diverse experience in a number of areas and disciplines, including a bachelor’s degree in linguistics, extensive experience in food service, and teaching. Immediately before starting Savvy Coders, I was managing 5 nutrition programs for a non-profit that serves as both a senior center and affordable housing for low-income older adults.
 
-##Interest in Coding
+## Interest in Coding
 When I began working in social services, among the initiatives that I took upon myself was to digitize and automate a number of handwritten procedures for which I was responsible. Among those procedures was a meal reservation system, which was being done with a 5lb binder containing reservation lists for each day of the month, with accompanying handwritten notes. Aside from the inherent challenges of completely uploading a system from a physical location to a shared drive, there were a number of accessibility concerns, as well.
 First, I needed to develop the reservation system in such a way that it would be intuitive for my coworkers to use.
 
@@ -27,12 +27,12 @@ Aside from efficiency, the main benefit of this app is the contribution it makes
 
 
 
-#Design Architecture
+# Design Architecture
 My project is being designed mobile first in order to put the service straight into the clients’ hands. As reservations are made using client and admin profiles, I am building a back-end with Firebase to create and store login credentials. Firebase will also be used to load daily menus into the back end, and JavaScript will be used to create classes for clients and allow them to interact with menus. Menus will be formatted as JSON files, and client profile classes in JavaScript will contain key-value pairs indicating whether their preferences match with selected menus. JavaScript will also be used to populate a reservation and sign-in list, which will then be executed on screen as an expedited two-touch “signature” process (one touch next to the client’s name, another touch to confirm attendance). I have additional plans to expand the project beyond this timeframe, such as extending it to facilitate home delivery (i.e. Meals on Wheels) by accessing the Google Maps API to route delivery drivers to clients’ homes, and also the Google Calendars API to mark reservations in clients’ calendars.
 
 
 
-##The Value of Savvy Coders
+## The Value of Savvy Coders
 I have always valued creativity and fast-paced problem solving, both traits which I have identified as prevalent among successful programmers and web developers. Through programming, I seek to creatively solve problems and improve lives, and I am hopeful that my hard work in Savvy Coders translates to marketable skills necessary to be hired in the competitive field of programming.
 
 
