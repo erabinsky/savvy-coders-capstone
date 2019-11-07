@@ -6,8 +6,7 @@ export default {
             </li>
 
           <li> Can I still have an administrator to make reservations for me?
-            <p> Yes, you can find the contact information under our "contact" page,
-            or call (123) 456-7890 </p>
+            <p> Yes! To make reservations, or find out more about our services, please call you can (123) 456-7890, or visit our website by <a href="https://github.com/erabinsky/savvy-coders-capstone" target="_blank"> clicking this link </a> </p>
             </li>
 
 
