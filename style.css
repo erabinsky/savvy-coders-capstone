@@ -309,3 +309,44 @@ address ul li ul {
 #new-user{
   text-align: center;
 }
+
+
+@media screen and ( min-width:  768px) {
+   #hamburger{
+    display: inherit;
+    text-align: center;
+    font-size: 48px;
+
+  }
+
+  .nav-links {
+    /* position: absolute; */
+    overflow: hidden;
+    height: 80%;
+    background-color: var(--primary);
+    transition-timing-function: ease-in;
+    transition: 1s;
+    transform: translateY(-150%);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+
+  .nav-links-active {
+    display: flex;
+    align-self: center;
+    transition-timing-function: ease-out;
+    transition: 1s;
+    transform: translateY(0%);
+    /* transform: translateX(40.5vw); */
+    width: 100vw;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

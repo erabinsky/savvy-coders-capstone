@@ -58,6 +58,11 @@ function render(st = state.Login) {
       console.log('user logged in:', userInfo.uid);
     }
 
+    const currentPage = router.lastRouteResolved().url;
+    const navLinks = document.querySelector('')
+
+
+
 
 
 
@@ -66,7 +71,6 @@ function render(st = state.Login) {
 
     //Login Function
     console.log(router.lastRouteResolved().url)
-    const currentPage = router.lastRouteResolved().url;
     if (currentPage === "/Login") {
 
 
