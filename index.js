@@ -8,6 +8,7 @@ import Navigo from "navigo";
 import { auth, db, firebase } from "./firebase";
 import { firestore } from "firebase";
 import { userInfo } from "os";
+import navLinks from "./store/navLinks";
 
 
 
@@ -59,11 +60,6 @@ function render(st = state.Login) {
     }
 
     const currentPage = router.lastRouteResolved().url;
-    const navLinks = document.querySelector('')
-
-
-
-
 
 
 
