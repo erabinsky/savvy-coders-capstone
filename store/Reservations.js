@@ -47,8 +47,23 @@ export default {
       </ul>
       </li>
 
-    <li class="res-settings"> Schedule<i class="fas fa-chevron-right arrow down"> </i> </li>
-    <li class="res-settings"> Menu Search<i class="fas fa-chevron-right arrow down"> </i> </li>
+    <li class="res-settings"> Schedule<i class="fas fa-chevron-right arrow down"> </i>
+      <ul class="settings-dropdown none" id="schedule">
+        <li class="schedule-day">MON</li>
+        <li class="schedule-day">TUE</li>
+        <li class="schedule-day">WED</li>
+        <li class="schedule-day">THU</li>
+        <li class="schedule-day">FRI</li>
+      </ul>
+    </li>
+    <li class="res-settings"> Menu Search<i class="fas fa-chevron-right arrow down"> </i>
+      <ul class="settings-dropdown none">
+        <li>
+          <label for="meal-search">Search Meal: </label>
+          <input type="text" name="meal-search" id="meal-search"/>
+        </li>
+      </ul>
+    </li>
 
   </ul>
   </div>
