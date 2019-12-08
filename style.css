@@ -349,4 +349,14 @@ address ul li ul {
     font-weight: bold;
     font-size: 20px;
   }
+  #reServe {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10vh;
+    display: block;
+    text-align: center;
+    color: var(--backsplash);
+    background-color: var(--primary);
+    font-size: 72px;
+  }
 }
